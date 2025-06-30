@@ -3,13 +3,13 @@
 This example demonstrates how to use `count` with the `null_resource` to create multiple placeholder resources dynamically.
 
 ## Files
-- `main.tf` – Creates multiple null resources using a loop.
+- `main.tf` – Creates multiple null resources.
 
 ## Usage
 
 ```bash
 terraform init
-terraform apply -var='names=["alpha","beta","gamma"]
+terraform apply
 ```
 
 ## Results
