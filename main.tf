@@ -1,7 +1,7 @@
 resource "null_resource" "example" {
-  count = "3"
+  count = "4"
 
   provisioner "local-exec" {
-    command = "echo Hello from instance" $count.index
+    command = "echo Hello from instance ${count.index}"
   }
 }
